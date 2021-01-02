@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Checkout</title>
+
+    <!-- Style Sheet -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/custom.css">
+    <!-- End style sheet -->
+
+  </head>
+  <body>
+    <div class="container">  
+      
+      <div class="bg-image">
+      </div>
+      <!-- Page header -->
+      <header class="checkout-header">
+        <div class="header-btn">
+          <a href="#">
+            <button type="button" class="back-btn"><i class="fa fa-angle-left"></i> Retour au glossaire</button>
+          </a>
+        </div>
+        <div class="header-logo">
+          <img src="assets/images/logo-copy.png" alt="This is logo">
+        </div>
+      </header>
+      <!-- End page header -->
+
+      <!-- Page content -->
+      <section class="checkout-content">
+        <!-- Summary Section -->
+        <div class="summary-section">
+          <div class="content-title">
+            <h1>1</h1>
+            <h3>Récapitulatif</h3>
+          </div>
+          <div class="summary-shipment">
+            <div class="shipment-title">
+              <p>Pour cet envoi</p>
+              <div>
+                <a href="#" class="text-decoration-none">
+                  <button class="custom-btn">Livraison gratuite</button>
+                </a>
+              </div>
+            </div>
+            <div class="product">
+                <div class="product-item">
+                  <div class="product-circle">
+                    <img src="assets/images/illus-produit-creme-rasage.png" alt="this is blue product" class="product-img">
+                    <div class="product-corner">
+                      1
+                    </div>
+                  </div>
+                  <div class="product-name">
+                    <p>Crème de rasage</p>
+                    <p>better shave - 150ml</p>
+                  </div>
+                  <div class="product-cost">
+                    29<span>,99€</span>
+                  </div>
+                </div>
+                <div class="product-item">
+                  <div class="product-circle">
+                    <img src="assets/images/illus-produit-creme-rasage_2.png" alt="this is yellow product" class="product-img">
+                    <div class="product-corner">
+                      1
+                    </div>
+                  </div>
+                  <div class="product-name">
+                    <p>Lotion avant rasage</p>
+                    <p>Prepa shave - 150ml</p>
+                  </div>
+                  <div class="product-cost">
+                    29<span>,99€</span>
+                  </div>
+                </div>
+                <div class="product-item">
+                  <div class="product-circle">
+                    <img src="assets/images/illus-produit-creme-rasage_3.png" alt="this is red product" class="product-img">
+                    <div class="product-corner">
+                      <img src="assets/images/icon-abo-envoi.png" alt="this is mailbox icon">
+                    </div>
+                  </div>
+                  <div class="product-name">
+                    <p>Après rasage anti-âge</p>
+                    <p>Extra shave - 150ml</p>
+                  </div>
+                  <div class="product-cost">
+                    29<span>,99€</span>
+                  </div>
+                </div>
+            </div>
+            <div class="product-total">
+              <p>Total facturé aujourd’hui</p>
+              <div class="product-cost">
+                89<span>,97€</span>
+              </div>
+            </div>
+          </div>
+          <div class="summary-subscription">
+            <div class="product-subscription-title">
+              <p>Votre abonnement <span>• Sans engagement</span></p>
+            </div>
+            <div class="subscription-month">
+              <hr>
+              <a href="#" class="text-decoration-none ml-auto">
+                <button class="custom-btn">
+                  <img src="assets/images/icon-abo-envoi.png" alt="">
+                  envoi tout les 2 mois
+                </button>
+              </a>
+            </div>
+            <div class="product-item">
+              <div class="product-circle">
+                <img src="assets/images/illus-produit-creme-rasage_3.png" alt="this is red product" class="product-img">
+                <div class="product-corner">
+                  <img src="assets/images/icon-abo-envoi.png" alt="this is mailbox icon">
+                </div>
+              </div>
+              <div class="product-name">
+                <p>Après rasage anti-âge</p>
+                <p>Extra shave - 150ml</p>
+              </div>
+              <div class="product-cost">
+                29<span>,99€</span>
+              </div>
+            </div>
+          </div>
+          <input type="text" id="promo_code" class="form-control" name="promo_code" placeholder="Code promo">
+        </div>
+        <!-- End summary Section -->
+
+        <!-- Contact Section -->
+        <div class="contact-section">
+          <div class="content-title">
+            <h1>2</h1>
+            <h3>Coordonnées</h3>
+          </div>
+          <div class="login-info">
+            <p class="login-title">Informations de connexion</p>
+            <input type="email" id="email" class="form-control" name="email" placeholder="Adresse mail">
+            <input type="password" id="password" class="form-control" name="password" placeholder="Mot de passe">
+            <input type="password" id="confirm" class="form-control" name="confirm_password" placeholder="Confirmer le mot de passe">
+          </div>
+          <div class="delivery-info">
+            <p class="delivery-title">Informations de livraison</p>
+            <div class="form-group">
+              <input type="text" id="fname" class="form-control" name="fname" placeholder="Prénom">
+              <input type="text" id="lname" class="form-control" name="lname" placeholder="Nom">
+            </div>
+            <input type="text" id="address" class="form-control" name="address" placeholder="Adresse">
+            <input type="text" id="additional_address" class="form-control" name="additional_address" placeholder="Adresse complémentaire">
+            <div class="form-group">
+              <input type="text" id="postal_code" class="form-control" name="postal_code" placeholder="Code postal">
+              <input type="text" id="city" class="form-control" name="city" placeholder="Ville">
+              <input type="text" id="country" class="form-control" name="country" placeholder="Pays">
+            </div>
+            <input type="tel" id="phone_number" class="form-control" name="phone_number" placeholder="Téléphone (pour le livreur)">
+          </div>
+        </div>
+        <!-- End contact Section -->
+
+        <!-- Payment Section -->
+        <div class="payment-section">
+          <div class="content-title">
+            <h1>3</h1>
+            <h3>Paiement</h3>
+          </div>
+          <div class="credit-card-part">
+            <input type="radio" id="credit_card" name="gender" value="credit_card">
+            <label for="credit_card">
+                <p>Carte de crédit</p>
+                <div class="credit-card-item-badge ml-auto">
+                  <div class="credit-card-item-icon credit-card-item-visa">
+                    <img src="assets/images/visa_bw_icon.png" alt="">
+                  </div>
+                  <div class="credit-card-item-icon credit-card-item-master">
+                    <img src="assets/images/master_bw_icon.png" alt="">
+                  </div>
+                  <div class="credit-card-item-icon credit-card-item-amex">
+                    <img src="assets/images/amex_bw_icon.png" alt="">
+                  </div>
+                </div>
+            </label>
+          </div>
+          <div class="paypal-part">
+            <input type="radio" id="paypal" name="gender" value="paypal">
+            <label for="paypal">Paypal</label>
+          </div>
+          <div class="buy-btn">
+            <button>
+              J’achète
+            </button>
+          </div>
+          <div class="payment-info payment-accept">
+            <i class="fa fa-balance-scale-left"></i>
+            <p>
+              J'ai lu et j'accepte les <a href="#">conditions générales de vente</a> du service Monsieur Barbier et je suis informé sur mon droit de rétractation.
+            </p>
+          </div>
+          <div class="payment-info payment-secure">
+            <i class="fa fa-lock  "></i>
+            <p>
+              Page 100% sécurisée via port HTTPS. Aucune carte n'est stockée sur ce site. Paiement sécurisé via Braintree LLC.
+            </p>
+          </div>
+          <div class="payment-info">
+            <i class="fas fa-archive"></i>
+            <p>
+              Nous expédions votre premier kit sous 24h, et les suivants le 15 du mois, tous les deux mois
+            </p>
+          </div>
+        </div>
+        <!-- End payment Section -->
+
+      </section>
+      <!-- End page content -->
+
+    </div>
+
+    <!-- Script -->
+    <script src="./assets/js/custom.js" charset="utf-8"></script>
+    <!-- End script -->
+
+  </body>
+</html>
